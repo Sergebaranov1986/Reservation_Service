@@ -26,6 +26,11 @@
 11) Чтобы все бронирования не выгружались при поиске конфликтов через findAll в память приложения, оптимизируем это через JPQL запрос(Пагинация через Pageable)
 ![query](https://github.com/user-attachments/assets/66f47d64-006e-4668-81da-6ba897320b10)
 ![2](https://github.com/user-attachments/assets/0ff91ba9-9c52-45c4-b36a-2dad82789e7e)
+ 
+**TO DO : В в валидации в дто добавить message в каждый констрэйнт , а также везде констрэйт @Size(min,max,message)
+скольку будет выкидываться MethodArgumentNotValidException, добавить обработчик в соответвствующем  ExeptionHandler. Добавить файл msg.properties и брать сообщения оттуда, используя {}.
+
+добавить на ручки @ResponseStatus(HttpStatus.нужный статус). но через responseentity более гибкое управление**
 
 
 
